@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes"> 
+
+        <title>DANCING BEATS</title>
+        
+         <!-- Webpage logo -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />    
+    <link rel="stylesheet" href="css/style.css">    
+   
+   
+    <script type="text/javascript" src="js/d3.js"></script>
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>  
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/chart.js"></script>
+
+  </head>
+
+  <body>
+    <!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="">
+    
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#hero">ABOUT</a></li>
+        <li><a href="#about">GRAPH</a></li>
+        <li><a href="#banner">VISUALIZATION</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h2 class="hero_header">Dancing Beats</h2>
+    <p class="tagline">- Saranya and Nalini</p>
+    <p><em>Dancing beats represents a music visualization along with the study of various attributes such as structures, beats etc. based on a music dataset. The dataset will reflect in the varied visualizations devised according to sound. Coupling hearing and vision through these graphical representations can help an individual percept dramatically by synchronizing them in a meaningful way. This will be implemented using a combination of d3 and HTML5 Web Audio API tools. Each visualization will use the dataset differently using a trial and error approach.<br>
+  </em></p>
+  </section>
+  
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2 class="hidden">About</h2>
+    <p class="text_column">Stacked Bar Chart: The visualization of a few songs from the music dataset are pictorially represented. Each column represents group of SVG rectangle elements along the time axis. The dataset is generated in the form of columns representing different types of features of a song (Structure -> Silence, Instrumental, Chorus, Verse) and beats (Beats -> 1 to 4), showing about a total of eight path elements. <br><br>Line Graph: A multi-series line chart is a set of path elements representing the lines. We use the  "cardinal" interpolator which gives a smoother more rounded appearance to the lines than using "linear" which would give straight line segments from point to point. </p>
+    <p class="text_column">Streamgraph: The streamgraph is made up of different path elements for each of the series in the data. Instead of drawing lines, the paths create an irregular shape that fills the area taken up by the series. To draw the path, the d3.layout.stack() and d3.svg.area() tools are used. The data columns represented are the same as that of a bar chart.
+
+</p>
+    <p class="text_column">Stacked Area Chart: There is only one difference when compared to that of a Streamgraph. Here only a single line is present. The type of offset that is sent to the "stack" is changed. The "zero" offset is used instead of a "wiggle". The data columns represented are same as that of a bar chart.
+
+</p>
+  
+<p class="text_column"><br>Multi-Line Chart: A multi-series line chart is a set of path elements representing the lines. We use the "cardinal" interpolator which gives smoother and more rounded appearance to the lines than using "linear" which would give straight line segments from point to point.</p>
+  </section>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+<div class="thumbnail"><a href="file:///Macintosh HD/Users/nalinidesouza/Downloads/MusicVisualizer-DancingBeats 2/stacked-bar-full.html">Stacked Bar</a>
+      
+    <p>Click to View</p>
+    </div>
+    <div class="thumbnail"><a href="file:///Macintosh HD/Users/nalinidesouza/Downloads/MusicVisualizer-DancingBeats 2/stacked-area-full.html">Stacked Area</a>
+    
+<p>Click to View</p>
+    </div>
+    <div class="thumbnail"><a href="file:///Macintosh HD/Users/nalinidesouza/Downloads/MusicVisualizer-DancingBeats 2/streamgraph-full.html">Stream Graph</a>
+   
+      <p>Click to View</p>
+    </div>
+    <div class="thumbnail"><a href="file:///Macintosh HD/Users/nalinidesouza/Downloads/MusicVisualizer-DancingBeats 2/multi-line-full.html">MultiLine Graph</a>
+    
+      <p>Click to View</p>
+    </div>
+    <div class="thumbnail"><a href="file:///Macintosh HD/Users/nalinidesouza/Downloads/MusicVisualizer-DancingBeats 2/multi-chart.html">Multi Chart Graph</a><p>Click to View</p>
+  </div></div>
+  <!-- Parallax Section -->
+  <section class="banner" id="banner">
+    <h3>Steps for building the chart</label>
+     <p>The &nbsp; basic steps for building the chart are as follows: (1) An Array is derived using variable names that represent the series in the data file (2) The data is then transformed into the the input D3 needs to layout the chart and (3) D3 is to create the SVG elements.</p>
+  <h3>To view the visualized Song track. Click on the Play button</h3>
+      <!-- More Info Section -->
+  <footer>
+    <article class="footer_column">
+
+    <!-- Playlist -->
+ <audio id="audioElement" src="Merge 2.mp3"></audio>
+ <audio id="audioElement1" src="Playlist/Carole_King-Way_Over_Yonder.mp3"></audio>
+ <audio id="audioElement2" src="../Playlist/Carole_King-So_Far_Away.mp3"></audio>
+ <audio id="audioElement3" src="../Playlist/Carole_King-It_s_Too_Late.mp3"></audio>
+ <audio id="audioElement4" src="../Playlist/Carole_King-Smackwater_Jack.mp3"></audio> 
+ <audio id="audioElement5" src="../Playlist/Carole_King-Where_You_Lead.mp3"></audio>
+ <audio id="audioElement6" src="../Playlist/Carole_King-Tapestry.mp3"></audio>
+ <audio id="audioElement7" src="../Playlist/Carole_King-I_Feel_The_Earth_Move.mp3"></audio>
+ <audio id="audioElement8" src="../Playlist/Carole King - Smackwater Jack (Live)_(song365.cc).mp3"></audio>
+ <audio id="audioElement9" src="../Playlist/Carole_King-Out_In_The_Cold_Previous_Unreleased_.mp3"></audio>
+ <audio id="audioElement10" src="../Playlist/The_Beatles-I_Saw_Her_Standing_There.mp3"></audio>
+ <audio id="audioElement11" src="../Playlist/Carole_King-Home_Again.mp3"></audio>
+ <audio id="audioElement12" src="../Playlist/Carole King - (You Make Me Feel Like A) Natural Woman.mp3"></audio>
+ <audio id="audioElement13" src="../Playlist/Carole_King-You_ve_Got_a_Friend.mp3"></audio>
+ <audio id="audioElement14" src="../Playlist/Carole_King-Beautiful.mp3"></audio>
+ <audio id="audioElement15" src="../Playlist/The_Beatles-Misery.mp3"></audio>
+ <audio id="audioElement16" src="../Playlist/Carole_King-Will_you_still_love_me_tomorrow.mp3"></audio>
+       
+        <div><br> 
+        <button onclick="document.getElementById('audioElement').play()">Play</button>
+          <button onclick="document.getElementById('audioElement').pause()">Pause</button>
+          <button onclick="document.getElementById('audioElement').volume+=0.1">Volume Up</button>
+          <button onclick="document.getElementById('audioElement').volume-=0.1">Volume Down</button>
+          <a href="playlist.html">
+          <button onclick="playlist.html">Playlist of Songs</button>
+      </a>  </div>
+</article>
+</footer>
+
+  </body>
+</html>
